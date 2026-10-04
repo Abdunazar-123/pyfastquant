@@ -1,0 +1,16 @@
+[build-system]
+requires = [
+    "setuptools>=45.0.0",
+    "wheel>=0.34.0",
+    "pybind11>=2.9.0",
+    "numpy>=1.19.0",
+    "cmake>=3.15.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyfastquant"
+version = "2.0.0"
+description = "High-performance quantitative finance library: C++/AVX2/OpenMP engine exposed to Python via pybind11"
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.19.0"]
